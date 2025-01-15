@@ -22,7 +22,7 @@ export default function Chat() {
 
   useEffect(() => {
     // Establish WebSocket connection
-    ws.current = new WebSocket('ws:https://backend-ch-26sz.onrender.com') // Adjust WebSocket URL as needed
+    ws.current = new WebSocket('wss://backend-ch-26sz.onrender.com') // Adjust WebSocket URL as needed
   
     ws.current.onopen = () => {
       console.log('WebSocket connected')
